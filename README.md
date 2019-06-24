@@ -2,7 +2,7 @@
 
 This directory contains docker containers I use for development.
 
-1. building the container
+## Building the container
 
 ```
 ./script/build.sh <container>
@@ -11,7 +11,7 @@ This directory contains docker containers I use for development.
 This configures a container with common development tools and also creates a
 user whose UID/GID match mine on the local machine.
 
-2. using the container
+## Using the container
 
 ```
 ./bin/sbs-run-docker <container>
