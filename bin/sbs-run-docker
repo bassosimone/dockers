@@ -1,0 +1,4 @@
+#!/bin/sh
+[ $# -eq 1 ] || { echo "Usage: sbs-run-docker <image-name>"; exit 1; }
+set -ex
+docker run --cap-drop=all --rm --user `id -u`:`id -g` -it -v`pwd`:/workdir -w/workdir $1
